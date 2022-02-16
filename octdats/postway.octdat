@@ -1,0 +1,63 @@
+{
+	id postway.Props.postway
+	type DoorPropType
+	inherit Oct.Props.Doorway
+    
+	name = Post Doorway
+    toolName = Post
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 3
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+    
+    maxHealth = 50
+    progressMultiplier = .35
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id postway.Props.postway.Research
+        type ResearchEntry
+        inherit Oct.Research.Building.Doorway.Wood
+        
+        name = Post Doorway
+        tooltipProvider = <postway.Props.postway>
+        tierOffset = 3
+    }
+    
+    minValue = 1
+    maxValue = 5
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/postway.fbx
+			name = NRM
+            behavior = PropBehavior
+		}
+	]
+	
+	colorSlots = 
+	[
+		{
+			type PropColorSlot
+			name = Lightwood
+            materials = 
+            [
+                Lightwood
+            ]
+			palette = <Oct.Props.Palettes.Plaster>
+		}
+		{
+			type PropColorSlot
+			name = Darkwood
+            materials = 
+            [
+                Darkwood
+            ]
+			palette = <Oct.Props.Palettes.Wood>
+		}
+	]
+}

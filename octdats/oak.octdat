@@ -1,0 +1,57 @@
+{
+	id oak.Props.Details.oak
+	type DetailPropType
+	inherit Oct.Props.Details
+    
+	name = Oak Tree
+    toolName = Tree
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 10
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+		
+	category = <Oct.Props.Categories.Decorations.Standing>
+    
+    maxHealth = 100
+    progressMultiplier = .125
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id oak.Props.Details.oak.Research
+        type ResearchEntry
+        inherit Oct.Research.Building.Base
+        
+        name = Oak Tree
+        prerequisite = <Oct.Research.Building.Decoration>
+        tooltipProvider = <oak.Props.Details.oak>
+        tierOffset = 2
+    }
+    
+    minValue = 1
+    maxValue = 16
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/oak1.fbx
+			name = small
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/oak2.fbx
+			name = medium
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/oak3.fbx
+			name = tall
+            behavior = PropBehavior
+		}
+	]
+
+}

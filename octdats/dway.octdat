@@ -1,0 +1,43 @@
+{
+
+	id dway.Props.dway
+	type DoorPropType
+	inherit Oct.Props.Doorway
+    
+	name = Garden Doorway
+    toolName = Garden
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 5
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    
+    maxHealth = 100
+    progressMultiplier = .35
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id dway.Props.dway.Research
+        type ResearchEntry
+        inherit Oct.Research.Building.Doorway.Wood
+        
+        name = Garden Doorway
+        tooltipProvider = <dway.Props.dway>
+        tierOffset = 3
+    }
+    
+    minValue = 1
+    maxValue = 10
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/dway.fbx
+			name = NRM
+            behavior = PropBehavior
+		}
+	]
+	
+}

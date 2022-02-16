@@ -1,0 +1,57 @@
+{
+	id ever.Props.Details.ever
+	type DetailPropType
+	inherit Oct.Props.Details
+    
+	name = Evergreen Tree
+    toolName = Tree
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 10
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+    
+	category = <Oct.Props.Categories.Decorations.Standing>
+	
+    maxHealth = 100
+    progressMultiplier = .125
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id ever.Props.Details.ever.Research
+        type ResearchEntry
+        inherit Oct.Research.Building.Base
+        
+        name = Evergreen Tree
+        prerequisite = <Oct.Research.Building.Decoration>
+        tooltipProvider = <ever.Props.Details.ever>
+        tierOffset = 2
+    }
+    
+    minValue = 1
+    maxValue = 16
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/ever1.fbx
+			name = small
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/ever2.fbx
+			name = medium
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/ever3.fbx
+			name = tall
+            behavior = PropBehavior
+		}
+	]
+	
+}
