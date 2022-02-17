@@ -1,0 +1,61 @@
+
+
+{
+	id Garden.Buildings.Garden.T1
+	type BuildingType
+	
+	baseValue = 5
+	name = Tier 1 Garden
+	priority = 21
+    lodging = false
+	
+	specifications = 
+	[
+		<Garden.Rooms.Contents.T1>
+	]
+}
+{
+	id Garden.Rooms.Contents.Grass
+	type ContainsPropSpecification
+	
+	name = Grass
+	types = 
+	[
+		<Garden.Props.Details.grass>
+	]
+    included = true
+}
+{
+	id Garden.Rooms.Contents.Pumpkin
+	type ContainsPropSpecification
+	
+	name = Pumpkin
+	types = 
+	[
+		<Garden.Props.Details.pum>
+	]
+    included = true
+}
+{
+	id Garden.Rooms.Contents.Flower
+	type ContainsPropSpecification
+	
+	name = Flower
+	types = 
+	[
+		<Garden.Props.Details.flower>
+	]
+    included = true
+}
+{
+	id Garden.Rooms.Contents.T1
+	type AnySpecification
+	
+	name = Small Garden
+	of = 
+	[
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Flower>
+	]
+}	

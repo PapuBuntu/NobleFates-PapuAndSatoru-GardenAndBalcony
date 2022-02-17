@@ -1,0 +1,18 @@
+{
+    id Garden.Research
+    type ResearchEntry
+    abstract
+    
+    verb = to Craft
+    skill = Crafting
+}
+{
+	id Garden.Research.Garden
+	type ResearchEntry
+    inherit Garden.Research
+	
+	name = Garden
+	description = Ability to Craft Garden Decorations
+	category = true
+	tierOffset = 0
+}

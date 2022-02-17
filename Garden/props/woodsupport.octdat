@@ -1,0 +1,88 @@
+{
+
+	id Garden.Props.woodsupport
+	type WallPropType
+	inherit Oct.Props.Wall.Tall
+    
+	name = Wood Support
+    toolName = Wsupport
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 8
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+    category = <Garden.Categories.Garden.Props>
+    maxHealth = 60
+    progressMultiplier = .25
+    difficulty = .75
+    skillCurve = .75
+    
+    researchEntry = 
+    {
+        id Garden.Research.woodsupport
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Wood Support
+		prerequisite = <Garden.Research.Garden>
+        tooltipProvider = <Garden.Props.woodsupport>
+        tierOffset = 4
+    }
+    
+    minValue = 4
+    maxValue = 8
+	
+	cornerPostAccent =
+	{
+		id Garden.Props.woodsupport.Post
+		type PropAccentType
+		
+		prefab = 
+		{
+			type Prefab
+			path = /Art/invpillar.fbx
+			name = Post
+            behavior = WallPostPropAccentBehavior
+			
+		}
+	}
+	
+    resolvablePrefabs = 
+	[
+	
+	//Walls
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant A
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/woodsupport.fbx
+				name = v1
+                behavior = WallPropBehavior
+				
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant B
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/woodsupport2.fbx
+				name = v2
+                behavior = WallPropBehavior
+				
+			}
+		}
+		
+		
+	]
+	
+	
+}
