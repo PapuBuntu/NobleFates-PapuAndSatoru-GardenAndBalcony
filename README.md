@@ -7,6 +7,8 @@ Example:
 This mod is compatible with old saves.
 Remove old Garden mod folder and replace with new when updating.  
 
+Art by Papu Buntu, code by Satoru.
+
 ### Download: <a href="https://github.com/PapuBuntu/NobleFates-Papu-GardenAndBalcony/raw/main/Garden.7z">Garden And Balcony</a>  
 
 <br>
