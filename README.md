@@ -22,7 +22,7 @@ content :
 
 -Garden Doorway  (short door way that act like tall one, allow to create outside enclosed and ownable room)
 
--Natural decoration (craftable flower, tree, bush, pumpkin and grass from the game)
+-Natural decoration (craftable flower, tree, bush, rocs, pumpkin and grass from the game)
 
 -Stone stairs 
 
