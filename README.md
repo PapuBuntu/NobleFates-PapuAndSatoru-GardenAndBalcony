@@ -1,10 +1,18 @@
 This mod add new buildable props to the game garden themed.
 
-to instal download as a .zip, unzip the content in your mods folder in C:\Users[name]\AppData\LocalLow\Xobermon,LLC\NobleFates\Mods , if there is not a Mods folder just creat it !
+If you don't have a Mods folder, you can create one.  
+Example:
+.../Noble Fates/Mods/Garden/  
 
 This mod is compatible with old saves.
+Remove old Garden mod folder and replace with new when updating.  
 
-content :
+### Download: <a href="https://github.com/PapuBuntu/NobleFates-Papu-GardenAndBalcony/raw/main/Garden.7z">Garden And Balcony</a>  
+
+<br>
+<br>
+
+## Content
 
 -Balcony (short wall that act like tall one, allow to create outside enclosed and ownable room)
 
@@ -29,3 +37,5 @@ content :
 -Invisible stone and wood floor (a floor that apear as litle floor props on the level under it, allow to create outside enclosed and ownable room)
 
 To use the Invisible floor and create enclosed outside room take a look at the tutorial picture in the mod folder, hope you enjoy and have a good play !
+
+![alt text](https://github.com/PapuBuntu/NobleFates-Papu-GardenAndBalcony/blob/main/OwnableGardenTutorial.jpg?raw=true "tutorial picture")

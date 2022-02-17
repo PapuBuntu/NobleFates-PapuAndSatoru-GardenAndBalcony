@@ -1,0 +1,45 @@
+{
+
+	id Garden.Props.smallpost
+	type WallPostPropType
+	inherit Oct.Props.WallPost
+    
+	name = Small Post
+    toolName = Post
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 3
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+    category = <Garden.Categories.Garden.Props>
+    
+    maxHealth = 50
+    progressMultiplier = .35
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Garden.Research.smallpost
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Small Post
+        tooltipProvider = <Garden.Props.smallpost>
+        tierOffset = 3
+        prerequisite = <Garden.Research.Garden>
+    }
+    
+    minValue = 1
+    maxValue = 5
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/smallpost.fbx
+			name = NRM
+            behavior = PropBehavior
+		}
+	]
+	
+}
