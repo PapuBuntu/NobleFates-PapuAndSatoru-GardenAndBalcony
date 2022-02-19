@@ -10,7 +10,7 @@
 	buildItemFilter = <Oct.Items.Stackable.Wood>
 	buildItemCount = 3
 	repairItemFilter = <Oct.Items.Stackable.Wood>
-    category = <Garden.Categories.Garden.Props>
+    category = <Garden.Categories.Garden.Balcony>
     
     maxHealth = 50
     progressMultiplier = .35

@@ -16,3 +16,13 @@
 	category = true
 	tierOffset = 0
 }
+{
+	id Garden.Research.StoneFloor
+	type ResearchEntry
+    inherit Garden.Research
+	
+	name = Stone Floor
+	prerequisite = <Garden.Research.Garden>
+    tooltipProvider = <Garden.Props.DynamicFloor.Basic>
+	tierOffset = 2
+}
