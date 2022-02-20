@@ -12,3 +12,11 @@
 	toolName = Garden Props
 	parent = <Garden.Categories.Garden>
 }
+{
+	id Garden.Categories.Garden.Balcony
+	type PropCategory
+
+	name = Garden Balcony
+	toolName = Garden Balcony
+	parent = <Garden.Categories.Garden>
+}
