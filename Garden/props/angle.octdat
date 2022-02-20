@@ -6,7 +6,7 @@
     
 	name = Garden Pillar
     toolName = Garden
-    category = <Garden.Categories.Garden.Props>
+    category = <Garden.Categories.Garden.Stone>
 	buildItemFilter = <Oct.Items.Stackable.Stone>
 	buildItemCount = 4
 	repairItemFilter = <Oct.Items.Stackable.Stone>
