@@ -32,6 +32,12 @@ Art by Papu Buntu, code by Satoru.
 
 -Garden Doorway  (short door way that act like tall one, allow to create outside enclosed and ownable room)
 
+-Hedge fence (short wall that act like tall one, allow to create outside enclosed and ownable room)
+
+-Hedge doorway (short door way that act like tall one, allow to create outside enclosed and ownable room)
+
+-decorative tree
+
 -Natural decoration (craftable flower, tree, bush, rocs, pumpkin and grass from the game)
 
 -Stone stairs 
