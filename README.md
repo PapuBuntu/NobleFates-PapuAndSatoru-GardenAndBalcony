@@ -42,6 +42,8 @@ Art by Papu Buntu, code by Satoru.
 
 -Stone stairs 
 
+-Stone modular carpet
+
 -Invisible stone and wood floor (a floor that apear as litle floor props on the level under it, allow to create outside enclosed and ownable room)
 
 To use the Invisible floor and create enclosed outside room take a look at the tutorial picture in the mod folder, hope you enjoy and have a good play !
