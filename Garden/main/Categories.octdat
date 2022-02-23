@@ -2,14 +2,14 @@
 	id Garden.Categories.Garden
 	type PropCategory
 
-	name = GardenAndBalcony
+	name = Garden
 }
 {
 	id Garden.Categories.Garden.Props
 	type PropCategory
 
-	name = Garden
-	toolName = Garden
+	name = Nature
+	toolName = Nature
 	parent = <Garden.Categories.Garden>
 }
 {
