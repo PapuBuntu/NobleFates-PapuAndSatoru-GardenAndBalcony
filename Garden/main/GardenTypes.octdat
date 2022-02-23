@@ -4,58 +4,137 @@
 	id Garden.Buildings.Garden.T1
 	type BuildingType
 	
-	baseValue = 5
+	baseValue = 15
 	name = Tier 1 Garden
 	priority = 21
     lodging = false
 	
 	specifications = 
 	[
-		<Garden.Rooms.Contents.T1>
+		<Garden.Buildings.Contents.Garden.T1>
 	]
 }
 {
-	id Garden.Rooms.Contents.Grass
-	type ContainsPropSpecification
+	id Garden.Buildings.Garden.T2
+	type BuildingType
 	
-	name = Grass
-	types = 
+	baseValue = 30
+	name = Tier 2 Garden
+	priority = 21
+    lodging = false
+	
+	specifications = 
 	[
-		<Garden.Props.Details.grass>
+		<Garden.Buildings.Contents.Garden.T2>
 	]
-    included = true
 }
 {
-	id Garden.Rooms.Contents.Pumpkin
-	type ContainsPropSpecification
+	id Garden.Buildings.Garden.T3
+	type BuildingType
 	
-	name = Pumpkin
-	types = 
+	baseValue = 50
+	name = Tier 3 Garden
+	priority = 21
+    lodging = false
+	
+	specifications = 
 	[
-		<Garden.Props.Details.pum>
+		<Garden.Buildings.Contents.Garden.T3>
 	]
-    included = true
 }
 {
-	id Garden.Rooms.Contents.Flower
-	type ContainsPropSpecification
+	id Garden.Buildings.Garden.T4
+	type BuildingType
 	
-	name = Flower
-	types = 
+	baseValue = 75
+	name = Tier 4 Garden
+	priority = 21
+    lodging = false
+	
+	specifications = 
 	[
-		<Garden.Props.Details.flower>
+		<Garden.Buildings.Contents.Garden.T4>
 	]
-    included = true
 }
 {
-	id Garden.Rooms.Contents.T1
-	type AnySpecification
+	id Garden.Buildings.Garden.T5
+	type BuildingType
 	
-	name = Small Garden
-	of = 
+	baseValue = 100
+	name = Tier 5 Garden
+	priority = 21
+    lodging = false
+	
+	specifications = 
 	[
-		<Garden.Rooms.Contents.Grass>
-		<Garden.Rooms.Contents.Pumpkin>
-		<Garden.Rooms.Contents.Flower>
+		<Garden.Buildings.Contents.Garden.T5>
 	]
-}	
+}
+
+//  
+
+{
+	id Garden.Buildings.Contents.Garden.T1
+	type ContainsRoomSpecification
+	
+	name = Tier 1 Garden Room
+	types =
+	[
+		<Garden.Rooms.Garden.T1>
+		<Garden.Rooms.Garden.T2>
+		<Garden.Rooms.Garden.T3>
+		<Garden.Rooms.Garden.T4>
+		<Garden.Rooms.Garden.T5>
+	]
+	included = true
+}
+{
+	id Garden.Buildings.Contents.Garden.T2
+	type ContainsRoomSpecification
+	
+	name = Tier 2 Garden Room
+	types =
+	[
+		<Garden.Rooms.Garden.T2>
+		<Garden.Rooms.Garden.T3>
+		<Garden.Rooms.Garden.T4>
+		<Garden.Rooms.Garden.T5>
+	]
+	included = true
+}
+{
+	id Garden.Buildings.Contents.Garden.T3
+	type ContainsRoomSpecification
+	
+	name = Tier 3 Garden Room
+	types =
+	[
+		<Garden.Rooms.Garden.T3>
+		<Garden.Rooms.Garden.T4>
+		<Garden.Rooms.Garden.T5>
+	]
+	included = true
+}
+{
+	id Garden.Buildings.Contents.Garden.T4
+	type ContainsRoomSpecification
+	
+	name = Tier 4 Garden Room
+	types =
+	[
+		<Garden.Rooms.Garden.T4>
+		<Garden.Rooms.Garden.T5>
+	]
+	included = true
+}
+{
+	id Garden.Buildings.Contents.Garden.T5
+	type ContainsRoomSpecification
+	
+	name = Tier 5 Garden Room
+	types =
+	[
+		<Garden.Rooms.Garden.T5>
+	]
+	included = true
+}

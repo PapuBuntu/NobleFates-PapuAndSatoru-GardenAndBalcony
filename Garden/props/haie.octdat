@@ -48,8 +48,6 @@
 	
     resolvablePrefabs = 
 	[
-	
-	//Walls
 		{
 			type ResolvablePropPrefab
 			inherit Oct.Props.Wall.WallPrefab
@@ -80,7 +78,6 @@
 				
 			}
 		}
-
 		{
 			type ResolvablePropPrefab
 			inherit Oct.Props.Wall.WallPrefab
@@ -95,6 +92,7 @@
                 behavior = WallPropBehavior
 				
 			}
+		}
 		{
 			type ResolvablePropPrefab
 			inherit Oct.Props.Wall.WallPrefab
@@ -125,10 +123,5 @@
 				
 			}
 		}
-
-		}
-		
 	]
-	
-	
 }
