@@ -1,0 +1,30 @@
+{
+	id Garden.Categories.Garden
+	type PropCategory
+
+	name = Garden
+}
+{
+	id Garden.Categories.Garden.Props
+	type PropCategory
+
+	name = Nature
+	toolName = Nature
+	parent = <Garden.Categories.Garden>
+}
+{
+	id Garden.Categories.Garden.Balcony
+	type PropCategory
+
+	name = Wood
+	toolName = Wood
+	parent = <Garden.Categories.Garden>
+}
+{
+	id Garden.Categories.Garden.Stone
+	type PropCategory
+
+	name = Stone
+	toolName = Stone
+	parent = <Garden.Categories.Garden>
+}

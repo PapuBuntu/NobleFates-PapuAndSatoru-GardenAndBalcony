@@ -1,0 +1,160 @@
+{
+	id Garden.Rooms.Garden.T1
+	type RoomType
+	inherit Oct.Rooms.T1
+	
+	priority = 31
+	name = Small Garden
+    onlyInherit = true
+	baseValue = 5
+    relaxPreference = 10
+	
+	specifications = 
+	[
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Rock>
+		<Garden.Rooms.Contents.Rock>
+	]
+}
+{
+	id Garden.Rooms.Garden.T2
+	type RoomType
+	inherit Oct.Rooms.T2
+	
+	priority = 32
+	name = Medium Garden
+    onlyInherit = true
+	baseValue = 10
+    relaxPreference = 10
+	
+	specifications = 
+	[
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Rock>
+		<Garden.Rooms.Contents.Rock>
+	]
+}
+{
+	id Garden.Rooms.Garden.T3
+	type RoomType
+	inherit Oct.Rooms.T3
+	
+	priority = 33
+	name = Garden
+    onlyInherit = true
+	baseValue = 15
+    relaxPreference = 10
+	
+	specifications = 
+	[
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Rock>
+		<Garden.Rooms.Contents.Rock>
+	]
+}
+{
+	id Garden.Rooms.Garden.T4
+	type RoomType
+	inherit Oct.Rooms.T4
+	
+	priority = 34
+	name = Large Garden
+    onlyInherit = true
+	baseValue = 20
+    relaxPreference = 10
+	
+	specifications = 
+	[
+		<Garden.Rooms.Contents.DecoTree>
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Rock>
+		<Garden.Rooms.Contents.Rock>
+	]
+}
+{
+	id Garden.Rooms.Garden.T5
+	type RoomType
+	inherit Oct.Rooms.T4
+	
+	priority = 35
+	name = Complete Garden
+    onlyInherit = true
+	baseValue = 30
+    relaxPreference = 10
+	
+	specifications = 
+	[
+		<Garden.Rooms.Contents.GardenHedge>
+		<Garden.Rooms.Contents.DecoTree>
+		<Garden.Rooms.Contents.DecoTree>
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Bush>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Pumpkin>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Flower>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Grass>
+		<Garden.Rooms.Contents.Rock>
+		<Garden.Rooms.Contents.Rock>
+	]
+}
