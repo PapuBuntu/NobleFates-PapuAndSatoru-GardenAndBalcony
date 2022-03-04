@@ -1,0 +1,43 @@
+{
+
+	id Garden.Props.angle
+	type WallPostPropType
+	inherit Oct.Props.WallPost
+    
+	name = Garden Pillar
+    toolName = Garden
+    category = <Garden.Categories.Garden.Stone>
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 4
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    maxHealth = 50
+    progressMultiplier = .35
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Garden.Research.angle
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Garden Pillar
+        tooltipProvider = <Garden.Props.angle>
+        tierOffset = 3
+        prerequisite = <Garden.Research.Garden>
+    }
+    
+    minValue = 1
+    maxValue = 10
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/angle.fbx
+			name = NRM
+            behavior = PropBehavior
+		}
+	]
+	
+}

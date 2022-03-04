@@ -1,0 +1,110 @@
+{
+
+	id Garden.Props.Details.rock
+	type DetailPropType
+	inherit Oct.Props.Details
+    
+	name = Rocks
+    toolName = Rocks
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 3
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+	category = <Garden.Categories.Garden.Props>
+    maxHealth = 50
+    progressMultiplier = .125
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Garden.Research.rock
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Rocks
+        prerequisite = <Garden.Research.Garden>
+        tooltipProvider = <Garden.Props.Details.rock>
+        tierOffset = 2
+    }
+    
+    minValue = 1
+    maxValue = 5
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/roc1s.fbx
+			name = small 1
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/roc2s.fbx
+			name = small 2
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/roc3s.fbx
+			name = small 3
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/roc4s.fbx
+			name = small 4
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/roc1m.fbx
+			name = medium 1
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/roc2m.fbx
+			name = medium 2
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/roc3m.fbx
+			name = medium 3
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/roc4m.fbx
+			name = medium 4
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/roc1.fbx
+			name = big 1
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/roc2.fbx
+			name = big 2
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/roc3.fbx
+			name = big 3
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/roc4.fbx
+			name = big 4
+            behavior = PropBehavior
+		}
+	]
+
+}

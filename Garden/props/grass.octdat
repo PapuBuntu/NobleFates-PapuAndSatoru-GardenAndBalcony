@@ -1,0 +1,57 @@
+{
+	id Garden.Props.Details.grass
+	type DetailPropType
+	inherit Oct.Props.Details
+    
+	name = Grass
+    toolName = Grass
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 2
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+	
+	category = <Garden.Categories.Garden.Props>
+    
+    maxHealth = 30
+    progressMultiplier = .125
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Garden.Research.grass
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Grass
+        prerequisite = <Garden.Research.Garden>
+        tooltipProvider = <Garden.Props.Details.grass>
+        tierOffset = 2
+    }
+    
+    minValue = 1
+    maxValue = 6
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/grass1.fbx
+			name = v1
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/grass2.fbx
+			name = v2
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/grass3.fbx
+			name = v3
+            behavior = PropBehavior
+		}
+	]
+	
+}

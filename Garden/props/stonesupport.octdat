@@ -1,0 +1,88 @@
+{
+
+	id Garden.Props.stonesupport
+	type WallPropType
+	inherit Oct.Props.Wall.Tall
+    
+	name = Stone Support
+    toolName = Ssupport
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 8
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Garden.Categories.Garden.Stone>
+    maxHealth = 60
+    progressMultiplier = .25
+    difficulty = .75
+    skillCurve = .75
+    
+    researchEntry = 
+    {
+        id Garden.Research.stonesupport
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Wood Support
+		prerequisite = <Garden.Research.Garden>
+        tooltipProvider = <Garden.Props.stonesupport>
+        tierOffset = 4
+    }
+    
+    minValue = 4
+    maxValue = 8
+	
+	cornerPostAccent =
+	{
+		id Garden.Props.stonesupport.Post
+		type PropAccentType
+		
+		prefab = 
+		{
+			type Prefab
+			path = /Art/invpillar.fbx
+			name = Post
+            behavior = WallPostPropAccentBehavior
+			
+		}
+	}
+	
+    resolvablePrefabs = 
+	[
+	
+	//Walls
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant A
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/stonesupport.fbx
+				name = v1
+                behavior = WallPropBehavior
+				
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant B
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/stonesupport2.fbx
+				name = v2
+                behavior = WallPropBehavior
+				
+			}
+		}
+		
+		
+	]
+	
+	
+}

@@ -1,0 +1,72 @@
+{
+
+	id Garden.Props.balcony
+	type WallPropType
+	inherit Oct.Props.Wall.Tall
+    
+	name = Balcony
+    toolName = Balcony
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 4
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+    category = <Garden.Categories.Garden.Balcony>
+    maxHealth = 60
+    progressMultiplier = .25
+    difficulty = .75
+    skillCurve = .75
+    
+    researchEntry = 
+    {
+        id Garden.Research.balcony
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Balcony
+        tooltipProvider = <Garden.Props.balcony>
+        tierOffset = 4
+		prerequisite = <Garden.Research.Garden>
+    }
+    
+    minValue = 4
+    maxValue = 8
+	
+	cornerPostAccent =
+	{
+		id Garden.Props.balcony.Post
+		type PropAccentType
+		
+		prefab = 
+		{
+			type Prefab
+			path = /Art/smallpost.fbx
+			name = Post
+            behavior = WallPostPropAccentBehavior
+			
+		}
+	}
+	
+    resolvablePrefabs = 
+	[
+	
+	//Walls
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant A
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/balcony.fbx
+				name = v1
+                behavior = WallPropBehavior
+				
+			}
+		}
+		
+	]
+	
+	
+}

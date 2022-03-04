@@ -1,0 +1,45 @@
+{
+
+	id Garden.Props.stonepost
+	type WallPostPropType
+	inherit Oct.Props.WallPost
+    
+	name = Stone Post
+    toolName = Post
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 3
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Garden.Categories.Garden.Stone>
+    
+    maxHealth = 50
+    progressMultiplier = .35
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Garden.Research.stonepost
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Stone Post
+        tooltipProvider = <Garden.Props.stonepost>
+        tierOffset = 3
+        prerequisite = <Garden.Research.Garden>
+    }
+    
+    minValue = 1
+    maxValue = 5
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/stonepost.fbx
+			name = NRM
+            behavior = PropBehavior
+		}
+	]
+	
+}

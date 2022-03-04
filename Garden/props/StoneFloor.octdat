@@ -1,0 +1,754 @@
+{
+	abstract
+	id Garden.Props.DynamicFloor
+	type CarpetPropType
+	
+	actorType = CarpetPropActor
+	category = <Oct.Props.Categories.Carpets>
+	selectionMode = Tile
+	buildingMode = Props
+    area = true
+    proceduralUVs = true
+	
+	belonging = false
+    
+    itemsAllowedNegXNegZ = true
+    itemsAllowedNegXPosZ = true
+    itemsAllowedPosXNegZ = true
+    itemsAllowedPosXPosZ = true
+    detailPropsAllowedNegXNegZ = true
+    detailPropsAllowedNegXPosZ = true
+    detailPropsAllowedPosXNegZ = true
+    detailPropsAllowedPosXPosZ = true
+    
+    flattenTiles = true
+    crateable = false
+
+    buildPos = 
+	[
+		vector(0, 0, 0)
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.CenterPrefab
+	type ResolvablePropPrefab
+	
+	name = Center
+	
+	priority = 1
+	uniform = true
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.1EdgePrefab
+	type ResolvablePropPrefab
+	
+	name = Edge
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		edge
+	]
+	localAllowedPosZ =
+	[
+		carpet
+	]
+	localAllowedNegX =
+	[
+		carpet
+	]
+	localAllowedNegZ =
+	[
+		carpet
+	]
+	localAllowedNegXNegZ = 
+	[
+		carpet
+	]
+	localAllowedNegXPosZ = 
+	[
+		carpet
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.2EdgePrefab
+	type ResolvablePropPrefab
+	
+	name = Triangle
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		edge
+	]
+	localAllowedPosZ =
+	[
+		edge
+	]
+	localAllowedNegX =
+	[
+		carpet
+	]
+	localAllowedNegZ =
+	[
+		carpet
+	]
+	localAllowedNegXNegZ = 
+	[
+		carpet
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.2EdgeOppositePrefab
+	type ResolvablePropPrefab
+	
+	name = Broken 1
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		carpet
+	]
+	localAllowedPosZ =
+	[
+		edge
+	]
+	localAllowedNegX =
+	[
+		carpet
+	]
+	localAllowedNegZ =
+	[
+		edge
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.3EdgePrefab
+	type ResolvablePropPrefab
+	
+	name = Broken 2
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		edge
+	]
+	localAllowedPosZ =
+	[
+		edge
+	]
+	localAllowedNegX =
+	[
+		carpet
+	]
+	localAllowedNegZ =
+	[
+		edge
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.4EdgePrefab
+	type ResolvablePropPrefab
+	
+	name = Broken 3
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		edge
+	]
+	localAllowedPosZ =
+	[
+		edge
+	]
+	localAllowedNegX =
+	[
+		edge
+	]
+	localAllowedNegZ =
+	[
+		edge
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.1Corner1EdgePrefab
+	type ResolvablePropPrefab
+	
+	name = Edge 2
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		carpet
+	]
+	localAllowedPosZ =
+	[
+		carpet
+	]
+	localAllowedNegX =
+	[
+		edge
+	]
+	localAllowedNegZ =
+	[
+		carpet
+	]
+	localAllowedPosXPosZ =
+	[
+		corner
+	]
+	localAllowedPosXNegZ =
+	[
+		carpet
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.1Corner1EdgeOppositePrefab
+	type ResolvablePropPrefab
+	
+	name = Edge Opposite
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		carpet
+	]
+	localAllowedPosZ =
+	[
+		carpet
+	]
+	localAllowedNegX =
+	[
+		carpet
+	]
+	localAllowedNegZ =
+	[
+		edge
+	]
+	localAllowedPosXPosZ =
+	[
+		corner
+	]
+	localAllowedNegXPosZ =
+	[
+		carpet
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.1CornerPrefab
+	type ResolvablePropPrefab
+	
+	name = Center
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		carpet
+	]
+	localAllowedPosZ =
+	[
+		carpet
+	]
+	localAllowedNegX =
+	[
+		carpet
+	]
+	localAllowedNegZ =
+	[
+		carpet
+	]
+	localAllowedPosXPosZ =
+	[
+		corner
+	]
+	localAllowedNegXPosZ =
+	[
+		carpet
+	]
+	localAllowedNegXNegZ =
+	[
+		carpet
+	]
+	localAllowedPosXNegZ =
+	[
+		carpet
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.1Corner2EdgePrefab
+	type ResolvablePropPrefab
+	
+	name = Triangle 2
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		carpet
+	]
+	localAllowedPosZ =
+	[
+		carpet
+	]
+	localAllowedNegX =
+	[
+		edge
+	]
+	localAllowedNegZ =
+	[
+		edge
+	]
+	localAllowedPosXPosZ =
+	[
+		corner
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.2CornerPrefab
+	type ResolvablePropPrefab
+	
+	name = Center
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		carpet
+	]
+	localAllowedPosZ =
+	[
+		carpet
+	]
+	localAllowedNegX =
+	[
+		carpet
+	]
+	localAllowedNegZ =
+	[
+		carpet
+	]
+	localAllowedPosXPosZ =
+	[
+		corner
+	]
+	localAllowedNegXPosZ =
+	[
+		carpet
+	]
+	localAllowedNegXNegZ =
+	[
+		carpet
+	]
+	localAllowedPosXNegZ =
+	[
+		corner
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.2Corner1EdgePrefab
+	type ResolvablePropPrefab
+	
+	name = Edge 3
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		carpet
+	]
+	localAllowedPosZ =
+	[
+		carpet
+	]
+	localAllowedNegX =
+	[
+		edge
+	]
+	localAllowedNegZ =
+	[
+		carpet
+	]
+	localAllowedPosXPosZ =
+	[
+		corner
+	]
+	localAllowedPosXNegZ =
+	[
+		corner
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.2CornerOppositePrefab
+	type ResolvablePropPrefab
+	
+	name = Center
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		carpet
+	]
+	localAllowedPosZ =
+	[
+		carpet
+	]
+	localAllowedNegX =
+	[
+		carpet
+	]
+	localAllowedNegZ =
+	[
+		carpet
+	]
+	localAllowedPosXPosZ =
+	[
+		corner
+	]
+	localAllowedNegXPosZ =
+	[
+		carpet
+	]
+	localAllowedNegXNegZ =
+	[
+		corner
+	]
+	localAllowedPosXNegZ =
+	[
+		carpet
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.3CornerPrefab
+	type ResolvablePropPrefab
+	
+	name = Center
+	
+	priority = 3
+	
+	localAllowedPosX =
+	[
+		carpet
+	]
+	localAllowedPosZ =
+	[
+		carpet
+	]
+	localAllowedNegX =
+	[
+		carpet
+	]
+	localAllowedNegZ =
+	[
+		carpet
+	]
+	localAllowedPosXPosZ =
+	[
+		corner
+	]
+	localAllowedNegXPosZ =
+	[
+		carpet
+	]
+	localAllowedNegXNegZ =
+	[
+		corner
+	]
+	localAllowedPosXNegZ =
+	[
+		corner
+	]
+}
+{
+	abstract
+	id Garden.Props.DynamicFloor.4CornerPrefab
+	type ResolvablePropPrefab
+	
+	name = Center
+	
+	priority = 4
+	
+	localAllowedPosX =
+	[
+		carpet
+	]
+	localAllowedPosZ =
+	[
+		carpet
+	]
+	localAllowedNegX =
+	[
+		carpet
+	]
+	localAllowedNegZ =
+	[
+		carpet
+	]
+	localAllowedPosXPosZ =
+	[
+		corner
+	]
+	localAllowedNegXPosZ =
+	[
+		corner
+	]
+	localAllowedNegXNegZ =
+	[
+		corner
+	]
+	localAllowedPosXNegZ =
+	[
+		corner
+	]
+}
+{
+	id Garden.Props.DynamicFloor.Basic
+	type CarpetPropType
+	inherit Garden.Props.DynamicFloor
+    inherit Oct.Props.Audio.Stone
+	
+	name = Dynamic Stone Floor
+    pluralName = Dynamic Stone Floors
+    toolName = Dynamic
+    toolSort = 50
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 6
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    
+    maxHealth = 75
+    progressMultiplier = .35
+    difficulty = 1.5
+    skillCurve = 1
+    
+    minValue = 12
+    maxValue = 20
+	
+	clipOffset = -.5
+	clipSpace = vector(0, 0, 1)
+    
+	researchEntry = <Garden.Research.StoneFloor>
+	
+	resolvablePrefabs = 
+	[
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.4EdgePrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_4Edge.fbx
+				name = BasicTable4Edge
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.CenterPrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_Center.fbx
+				name = BasicTableCenter
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.1EdgePrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_1Edge.fbx
+				name = BasicTable1Edge
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.2EdgePrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_2Edge.fbx
+				name = BasicTable2Edge
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.2EdgeOppositePrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_2EdgeOpposite.fbx
+				name = BasicTable2EdgeOpposite
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.3EdgePrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_3Edge.fbx
+				name = BasicTable3Edge
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.1Corner1EdgeOppositePrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_1Corner1EdgeOpposite.fbx
+				name = BasicTable1Corner1EdgeOpposite
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.1Corner1EdgePrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_1Corner1Edge.fbx
+				name = BasicTable1Corner1Edge
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.1CornerPrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_Center.fbx
+				name = BasicTable1Corner
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.1Corner2EdgePrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_1Corner2Edge.fbx
+				name = BasicTable1Corner2Edge
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.2CornerPrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_Center.fbx
+				name = BasicTable2Corner
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.2Corner1EdgePrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_2Corner1Edge.fbx
+                name = BasicTable2Corner1Edge
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.2CornerOppositePrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_Center.fbx
+                name = BasicTable2CornerOpposite
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.3CornerPrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_Center.fbx
+				name = BasicTable3Corner
+                behavior = CarpetPropBehavior
+                
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Garden.Props.DynamicFloor.4CornerPrefab
+		
+			prefab = 
+			{
+				type Prefab
+				path = /Art/stonefloor_Center.fbx
+				name = BasicTable4Corner
+                behavior = CarpetPropBehavior
+                
+  
+			}
+		}
+	]
+	
+}

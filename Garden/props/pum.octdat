@@ -1,0 +1,56 @@
+{
+
+	id Garden.Props.Details.pum
+	type DetailPropType
+	inherit Oct.Props.Details
+    
+	name = Pumpkin
+    toolName = Pumpkin
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 5
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+	category = <Garden.Categories.Garden.Props>
+    maxHealth = 50
+    progressMultiplier = .125
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Garden.Research.pum
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Pumpkin
+        prerequisite = <Garden.Research.Garden>
+        tooltipProvider = <Garden.Props.Details.pum>
+        tierOffset = 2
+    }
+    
+    minValue = 1
+    maxValue = 10
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/pum3.fbx
+			name = small
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/pum1.fbx
+			name = medium
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/pum2.fbx
+			name = tall
+            behavior = PropBehavior
+		}
+	]
+	
+}

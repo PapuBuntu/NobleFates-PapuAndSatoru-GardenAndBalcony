@@ -1,0 +1,82 @@
+{
+	id Garden.Props.invstone
+	type FloorPropType
+	inherit Oct.Props.Floor
+    
+	name = Invisible Stone Floor
+    toolName = Invisible S
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 1
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Garden.Categories.Garden.Stone>
+    maxHealth = 70
+    progressMultiplier = .85
+    difficulty = .5
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Garden.Research.invstone
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Invisible Stone Floor
+		prerequisite = <Garden.Research.Garden>
+        tooltipProvider = <Garden.Props.invstone>
+        tierOffset = 3
+    }
+    
+    minValue = 1
+    maxValue = 5
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/invstone1.fbx
+			name = v1
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/invstone2.fbx
+			name = v2
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/invstone3.fbx
+			name = v3
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/invstone4.fbx
+			name = v4
+            behavior = PropBehavior
+		}
+	]
+	
+	colorSlots = 
+	[
+		{
+			type PropColorSlot
+			name = Lightwood
+            materials = 
+            [
+                Lightwood
+            ]
+			palette = <Oct.Props.Palettes.Plaster>
+		}
+		{
+			type PropColorSlot
+			name = Darkwood
+            materials = 
+            [
+                Darkwood
+            ]
+			palette = <Oct.Props.Palettes.Wood>
+		}
+	]
+}

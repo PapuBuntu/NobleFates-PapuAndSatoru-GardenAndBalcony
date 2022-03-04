@@ -1,0 +1,44 @@
+{
+
+	id Garden.Props.haiedoor
+	type DoorPropType
+	inherit Oct.Props.Doorway
+    
+	name = Hedge Doorway
+    toolName = Hedge
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 5
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+    category = <Garden.Categories.Garden.Props>
+    maxHealth = 100
+    progressMultiplier = .35
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Garden.Research.haiedoor
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Hedge Doorway
+        tooltipProvider = <Garden.Props.haiedoor>
+        tierOffset = 3
+        prerequisite = <Garden.Research.Garden>
+    }
+    
+    minValue = 1
+    maxValue = 10
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/haiedoor.fbx
+			name = NRM
+            behavior = PropBehavior
+		}
+	]
+	
+}

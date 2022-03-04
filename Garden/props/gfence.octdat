@@ -1,0 +1,102 @@
+{
+
+	id Garden.Props.gfence
+	type WallPropType
+	inherit Oct.Props.Wall.Tall
+    
+	name = Garden Fence
+    toolName = Garden
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 4
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Garden.Categories.Garden.Stone>
+    maxHealth = 60
+    progressMultiplier = .25
+    difficulty = .75
+    skillCurve = .75
+    
+    researchEntry = 
+    {
+        id Garden.Props.gfence.Research
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Garden Fence
+		prerequisite = <Garden.Research.Garden>
+        tooltipProvider = <Garden.Props.gfence>
+        tierOffset = 4
+    }
+    
+    minValue = 4
+    maxValue = 8
+	
+	cornerPostAccent =
+	{
+		id Garden.Props.gfence.Post
+		type PropAccentType
+		
+		prefab = 
+		{
+			type Prefab
+			path = /Art/angle.fbx
+			name = Angle
+            behavior = WallPostPropAccentBehavior
+			
+		}
+	}
+	
+    resolvablePrefabs = 
+	[
+	
+	//Walls
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant A
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/gfence1.fbx
+				name = v1
+                behavior = WallPropBehavior
+				
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant B
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/gfence2.fbx
+				name = v2
+                behavior = WallPropBehavior
+				
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant C
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/gfence3.fbx
+				name = v3
+                behavior = WallPropBehavior
+				
+			}
+		}
+		
+	]
+	
+	
+}
