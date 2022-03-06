@@ -1,0 +1,358 @@
+{
+	id Garden.Props.StreetLamp
+	type TilePropType
+	inherit Oct.Props.Audio.Wooden
+	
+	actorType = TilePropActor
+	name = StreetLamp
+    pluralName = StreetLamps
+    toolName = StreetLamp
+    toolSort = -1000
+    demolition = false
+    
+	category = <Garden.Categories.Garden.Props>
+	selectionMode = Tile
+	buildingMode = Props
+	rotation = choose
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 4
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+    
+    flattenTiles = true
+    removeFoliage = true
+    
+    maxHealth = 100
+    progressMultiplier = .5
+    difficulty = .4
+    skillCurve = .5
+    
+    activatedTipAction = Oct.Tips.WallTorches.WallTorch
+    placedTipAction = Oct.Tips.WallTorches.WallTorch.Placed
+	
+	belonging = true
+    
+    minValue = 10
+    maxValue = 10
+    
+    researchEntry = <Garden.Research.StreetLamps>
+	
+	buildPos = 
+	[
+		vector(0, 0, .25)
+		vector(0, -1, .25)
+		vector(0, 1, .25)
+		vector(1, 0, .25)
+        vector(-1, 0, .25)
+		vector(0, 0, 1.25)
+	]
+    
+    facets = 
+    [
+        {
+            id Garden.Props.StreetLamp.FuelBurner
+            type FuelBurnerPropFacetType
+            facetClass = FuelBurnerPropFacet
+            flameTransform = Flame
+            forLighting = true
+            fuelPerHour = 1
+            fuelType = <Oct.Items.Stackable.Wood>
+            flameMaterials =
+            [
+                Flame
+            ]
+        }
+    ]
+    
+    ignoreDestruction =
+    [
+        Flame
+    ]
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/streetlamp1.fbx
+			name = StreetLamp1
+            behavior = PropBehavior
+            
+            materials =
+            [
+                ?(name == Flame) {
+                    type Material
+                    _MinAnimation = .0625
+                }
+            ]
+		}
+	]
+	
+	lights = 
+	[
+		{
+			type PropLight
+			caster = Flame
+			offset = vector(0, 0, 0)
+			unityPrefab = WallTorchLight
+		}
+	]
+
+    researchEntry = 
+    {
+        id Garden.Research.StreetLamp1
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = StreetLamp
+        tooltipProvider = <Garden.Props.StreetLamp>
+        tierOffset = 3
+		prerequisite = <Garden.Research.Garden>
+    }
+}
+{
+	id Garden.Props.StreetLamp2
+	type TilePropType
+	inherit Oct.Props.Audio.Wooden
+	
+	actorType = TilePropActor
+	name = Vertical StreetLamp
+    pluralName = Vertical StreetLamps
+    toolName = StreetLamp
+    toolSort = -1000
+    demolition = false
+    
+	category = <Garden.Categories.Garden.Props>
+	selectionMode = Tile
+	buildingMode = Props
+	rotation = choose
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 4
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+    
+    flattenTiles = true
+    removeFoliage = true
+    
+    maxHealth = 100
+    progressMultiplier = .5
+    difficulty = .4
+    skillCurve = .5
+    
+    activatedTipAction = Oct.Tips.WallTorches.WallTorch
+    placedTipAction = Oct.Tips.WallTorches.WallTorch.Placed
+	
+	belonging = true
+    
+    minValue = 10
+    maxValue = 10
+    
+    researchEntry = <Garden.Research.StreetLamps>
+	
+	buildPos = 
+	[
+		vector(0, 0, .25)
+		vector(0, -1, .25)
+		vector(0, 1, .25)
+		vector(1, 0, .25)
+        vector(-1, 0, .25)
+		vector(0, 0, 1.25)
+	]
+    
+    facets = 
+    [
+        {
+            id Garden.Props.StreetLamp.FuelBurner2
+            type FuelBurnerPropFacetType
+            facetClass = FuelBurnerPropFacet
+            flameTransform = Flame
+            forLighting = true
+            fuelPerHour = 1
+            fuelType = <Oct.Items.Stackable.Wood>
+            flameMaterials =
+            [
+                Flame
+            ]
+        }
+    ]
+    
+    ignoreDestruction =
+    [
+        Flame
+    ]
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/streetlamp2.fbx
+			name = StreetLamp2
+            behavior = PropBehavior
+            
+            materials =
+            [
+                ?(name == Flame) {
+                    type Material
+                    _MinAnimation = .0625
+                }
+            ]
+		}
+	]
+	
+	lights = 
+	[
+		{
+			type PropLight
+			caster = Flame
+			offset = vector(0, 0, 0)
+			unityPrefab = WallTorchLight
+		}
+	]
+
+    researchEntry = 
+    {
+        id Garden.Research.StreetLamp2
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Vertical StreetLamp
+        tooltipProvider = <Garden.Props.StreetLamp2>
+        tierOffset = 3
+		prerequisite = <Garden.Research.Garden>
+    }
+}
+{
+    abstract
+	id Oct.Props.Candelabra
+	type QtrTilePropType
+	inherit Oct.Props.Audio.Stone
+	
+	name = Bronze Candelabra
+    pluralName = Bronze Candelabras
+    toolName = Brz Cndlbra
+    toolSort = -100
+    
+	buildItemFilter = <Oct.Items.Stackable.Copper>
+	buildItemCount = 24
+	repairItemFilter = <Oct.Items.Stackable.Copper>
+    
+    maxHealth = 100
+    progressMultiplier = .125
+    difficulty = .625
+    skillCurve = .5
+    
+    minValue = 3
+    maxValue = 28
+    
+    researchEntry = <Oct.Research.Building.Lighting.Candelabra.Bronze>
+
+	actorType = QtrTilePropActor
+	category = <Oct.Props.Categories.Lighting.Small>
+	selectionMode = QtrTile
+	buildingMode = QtrTileProps
+	rotation = choose
+	
+	belonging = true
+    
+    prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/streetlamp1.fbx
+			name = StreetLamp
+            behavior = PropBehavior
+                
+            sharedMaterials = 
+            [
+                {
+                    type OctDatSharedMaterial
+                    names = 
+                    [
+                        lightwood_mat
+                    ]
+                    material = <Oct.Props.Materials.Wood>
+                }
+                {
+                    type OctDatSharedMaterial
+                    names = 
+                    [
+                        darkIron_mat
+                    ]
+                    material = <Oct.Props.Materials.Bronze>
+                }
+            ]
+		}
+	]
+
+    facets = 
+    [
+        {
+            id Oct.Props.Candelabra.FuelBurner
+            type FuelBurnerPropFacetType
+            facetClass = FuelBurnerPropFacet
+            forLighting = true
+            fuelType = <Oct.Items.Stackable.Wood>
+            fuelPerHour = 4
+            fuelMaterials = 
+            [
+               CandleWax 
+            ]
+            flameMaterials =
+            [
+                Flame
+            ]
+        }
+    ]
+    
+    ignoreDestruction =
+    [
+        Flame_01
+        Flame_02
+        Flame_03
+        Flame_04
+        Flame_05
+        Flame_06
+    ]
+    
+	buildPos = 
+	[
+		vector(0, 0, .51)
+		vector(0, 0, -.51)
+		vector(.51, 0, 0)
+		vector(-.51, 0, 0)
+	]
+	
+	colorSlots = 
+	[
+        {
+			type PropColorSlot
+			name = Wood
+            materials = 
+            [
+                lightwood_mat
+            ]
+			palette = <Oct.Props.Palettes.WoodFurniture>
+		}
+    ]
+	
+	lights = 
+	[
+		{
+			type PropLight
+			caster = Flame_01
+			offset = vector(-.1, -.175, 0)
+			unityPrefab = FirePitLight
+		}
+	]
+
+    researchEntry = 
+    {
+        id Garden.Research.StreetLamp3
+        type ResearchEntry
+        inherit Garden.Research
+        
+        name = Vertical StreetLamp
+        tooltipProvider = <Garden.Props.StreetLamp2>
+        tierOffset = 3
+		prerequisite = <Garden.Research.Garden>
+    }
+}
