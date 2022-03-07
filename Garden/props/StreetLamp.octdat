@@ -1,0 +1,67 @@
+{
+    id New.Props.Candelabra.Bronze
+	type QtrTilePropType
+	inherit Oct.Props.Candelabra
+	
+	name = Street Lamp
+    pluralName = Street Lamps
+    toolName = Street Lamp
+    toolSort = -100
+    
+	buildItemFilter = <Oct.Items.Stackable.Copper>
+	buildItemCount = 24
+	repairItemFilter = <Oct.Items.Stackable.Copper>
+    
+    maxHealth = 100
+    progressMultiplier = .125
+    difficulty = .625
+    skillCurve = .5
+    
+    minValue = 3
+    maxValue = 28
+    
+    researchEntry = <Oct.Research.Building.Lighting.Candelabra.Bronze>
+    
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/streetlamp1.fbx
+			name = Street Lamp
+            behavior = PropBehavior
+                
+            sharedMaterials = 
+            [
+                {
+                    type OctDatSharedMaterial
+                    names = 
+                    [
+                        lightwood_mat
+                    ]
+                    material = <Oct.Props.Materials.Wood>
+                }
+                {
+                    type OctDatSharedMaterial
+                    names = 
+                    [
+                        darkIron_mat
+                    ]
+                    material = <Oct.Props.Materials.Bronze>
+                }
+            ]
+		}
+	]
+	
+	colorSlots = 
+	[
+		{
+			type PropColorSlot
+			name = Hardware 1
+            materials = 
+            [
+                darkIron_mat
+            ]
+			palette = <Oct.Props.Palettes.Bronze>
+		}	
+	]
+}
