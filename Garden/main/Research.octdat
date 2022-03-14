@@ -3,8 +3,8 @@
     type ResearchEntry
     abstract
     
-    verb = to Craft
-    skill = Crafting
+    verb = to Build
+    skill = Building
 }
 {
 	id Garden.Research.Garden
